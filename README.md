@@ -24,7 +24,7 @@ public class FilmViewHolder extends RecyclerView.ViewHolder {
 
 ### Step 2: Define the use to ViewHolder.
 
-```
+```java
 public class FilmographyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     ...
     private final FilmographyAdapterViewHolderBinder binder;
@@ -65,7 +65,7 @@ public class FilmographyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
 ### Step 3: Finish!
 
-:tada:
+:tada::tada::tada:
 
 ## Install
 
