@@ -33,4 +33,5 @@ publish {
     groupId = 'io.github.hisaichi5518'
     publishVersion = '0.0.2'
     website = 'https://github.com/hisaichi5518/view-holder-binder'
+    licences = ['MIT']
 }
