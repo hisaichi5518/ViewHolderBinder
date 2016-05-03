@@ -31,7 +31,8 @@ public class FilmographyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     public FilmographyAdapter(Context context) {
         ...
-        // The name of the ViewHolderBinder will be the "Class name(ex. FilmographyAdapter)" + "ViewHolderBinder".
+        // The name of the ViewHolderBinder will be
+        // the "Class name(ex. FilmographyAdapter)" + "ViewHolderBinder".
         this.binder = new FilmographyAdapterViewHolderBinder(context, this);
     }
 
@@ -44,13 +45,14 @@ public class FilmographyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        // Select the Item1ViewHolder from ViewType and create ViewHolder instance.
+        // Select the FilmViewHolder from ViewType and create ViewHolder instance.
         return binder.create(parent, viewType);
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        // Select the Item1ViewHolder from ViewType and run onBindViewHolder(Item1ViewHolder, int) method.
+        // Select the FilmViewHolder from ViewType
+        // and run onBindViewHolder(FilmViewHolder, int) method.
         binder.bind(holder, position);
     }
 
