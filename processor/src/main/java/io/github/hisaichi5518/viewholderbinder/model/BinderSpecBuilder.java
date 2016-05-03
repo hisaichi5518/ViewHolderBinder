@@ -1,9 +1,11 @@
 package io.github.hisaichi5518.viewholderbinder.model;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
+import com.squareup.javapoet.AnnotationSpec;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.FieldSpec;
 import com.squareup.javapoet.MethodSpec;
@@ -63,10 +65,15 @@ public class BinderSpecBuilder {
     }
 
     private MethodSpec buildCreatorMethodSpec() {
+        AnnotationSpec annotationSpec = AnnotationSpec.builder(SuppressLint.class)
+                .addMember("value", "$S", "ResourceType")
+                .build();
+
         MethodSpec.Builder builder = MethodSpec.methodBuilder("create")
                 .addParameter(ViewGroup.class, "parent")
                 .addParameter(Integer.class, "viewType")
                 .addModifiers(Modifier.PUBLIC)
+                .addAnnotation(annotationSpec)
                 .returns(ClassName.get("android.support.v7.widget.RecyclerView", "ViewHolder"))
                 .beginControlFlow("switch (viewType)");
 
