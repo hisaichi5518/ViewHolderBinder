@@ -1,4 +1,5 @@
 apply plugin: 'java'
+apply plugin: 'com.novoda.bintray-release'
 
 targetCompatibility = JavaVersion.VERSION_1_7
 sourceCompatibility = JavaVersion.VERSION_1_7
@@ -18,4 +19,14 @@ sourceSets {
             srcDirs = ['src/main/java', '../library/src/main/java']
         }
     }
+}
+
+publish {
+    artifactId = 'viewholderbinder'
+    desc = 'An annotation processor for ViewHolderBinder'
+
+    userOrg = 'hisaichi5518'
+    groupId = 'io.github.hisaichi5518'
+    publishVersion = '0.0.1'
+    website = 'https://github.com/hisaichi5518/view-holder-binder'
 }
