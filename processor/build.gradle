@@ -22,7 +22,7 @@ sourceSets {
 }
 
 publish {
-    artifactId = 'viewholderbinder'
+    artifactId = 'viewholderbinder-processor'
     desc = 'An annotation processor for ViewHolderBinder'
 
     userOrg = 'hisaichi5518'
