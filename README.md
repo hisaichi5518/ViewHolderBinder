@@ -71,55 +71,33 @@ public class FilmographyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
 ## Install
 
-### Gradle
+Add to your project `build.gradle` file:
 
-#### Step 1
+```groovy
+apply plugin: 'com.neenbedankt.android-apt'
 
-Add it in your root build.gradle at the end of repositories:
-
-```
-allprojects {
+buildscript {
     repositories {
-        maven { url "https://jitpack.io" }
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     }
 }
-```
 
-#### Step 2
-
-Add the dependency
-
-```
-dependencies {
-    compile 'com.github.hisaichi5518:view-holder-binder:v0.0.1'
+repositories {
+    jcenter()
 }
 ```
 
-### Maven
+Add to your app `build.gradle` file:
 
-#### Step 1
-
-Add the JitPack repository to your build file
-
-```
-<repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
-</repositories>
-```
-
-#### Step 2
-
-Add the dependency
-
-```
-<dependency>
-    <groupId>com.github.hisaichi5518</groupId>
-    <artifactId>view-holder-binder</artifactId>
-    <version>v0.0.1</version>
-</dependency>
+```groovy
+dependencies {
+    apt 'io.github.hisaichi5518:viewholderbinder-processor:0.0.2'
+    compile 'io.github.hisaichi5518:viewholderbinder:0.0.2'
+}
 ```
 
 ## See Also
