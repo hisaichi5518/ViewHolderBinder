@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ViewHolderBinder</string>
+    <string-array name="tv_drama">
+        <item>Mioka</item>
+        <item>Vampire Prosecutor 2</item>
+        <item>Galileo 2</item>
+        <item>Anne and Hanako</item>
+    </string-array>
+
+    <string-array name="film">
+        <item>Konzen Tokkyū</item>
+        <item>Bokura ga Ita</item>
+        <item>Yokomichi Yonosuke</item>
+        <item>Midsummer\'s Equation</item>
+    </string-array>
+</resources>

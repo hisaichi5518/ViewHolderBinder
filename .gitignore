@@ -1,0 +1,12 @@
+.gradle/
+local.properties
+gradle.properties
+.idea/*
+*.iml
+.DS_Store
+/build/*
+processor/build/*
+library/build/*
+example/build/*
+captures/
+.gradletasknamecache
