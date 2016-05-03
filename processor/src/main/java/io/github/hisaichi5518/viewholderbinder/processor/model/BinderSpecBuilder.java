@@ -1,4 +1,4 @@
-package io.github.hisaichi5518.viewholderbinder.model;
+package io.github.hisaichi5518.viewholderbinder.processor.model;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

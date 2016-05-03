@@ -1,4 +1,4 @@
-package io.github.hisaichi5518.viewholderbinder;
+package io.github.hisaichi5518.viewholderbinder.processor;
 
 import com.google.auto.service.AutoService;
 import com.squareup.javapoet.JavaFile;
@@ -26,7 +26,7 @@ import javax.lang.model.util.Elements;
 import javax.tools.Diagnostic;
 
 import io.github.hisaichi5518.viewholderbinder.annotation.ViewHolder;
-import io.github.hisaichi5518.viewholderbinder.model.BinderSpecBuilder;
+import io.github.hisaichi5518.viewholderbinder.processor.model.BinderSpecBuilder;
 
 @AutoService(Processor.class)
 @SupportedAnnotationTypes({"io.github.hisaichi5518.viewholderbinder.annotation.*"})
