@@ -38,7 +38,7 @@ public class FilmographyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     ...
 
-    // Add @ViewHolder annotation to view-holder parameter.
+    // Add @ViewHolder annotation to 1st paramter.
     void onBindViewHolder(@ViewHolder(viewType = 1, layout = R.layout.your_layout) FilmViewHolder holder, int position) {
         holder.render(items.get(position));
     }
@@ -74,8 +74,6 @@ public class FilmographyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 Add to your project `build.gradle` file:
 
 ```groovy
-apply plugin: 'com.neenbedankt.android-apt'
-
 buildscript {
     repositories {
         jcenter()
@@ -85,6 +83,8 @@ buildscript {
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     }
 }
+
+apply plugin: 'com.neenbedankt.android-apt'
 
 repositories {
     jcenter()
